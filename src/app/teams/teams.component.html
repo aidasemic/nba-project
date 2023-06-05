@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <h5 style="text-align: center;">Teams</h5>
+
+        <div id="teamCard" *ngFor="let team of teams" class="card text-bg-light mb-3 col-6"
+            style="max-width: 15rem; margin: 20px; padding: 10px;">
+            <div class="card-header">{{team.full_name}} ({{team.abbreviation}})</div>
+            <div class="card-body">
+                <p class="card-text">City: {{team.city}}</p>
+                <p class="card-text">Division: {{team.division}}</p>
+            </div>
+        </div>
+    </div>
+</div>
