@@ -9,13 +9,15 @@ import { GameService } from 'src/services/games.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { TeamService } from 'src/services/teams.service';
+import { MatchDetailsComponent } from './match-details/match-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GamesComponent,
     TeamsComponent,
-    HeaderComponent
+    HeaderComponent,
+    MatchDetailsComponent
   ],
   imports: [
     BrowserModule,

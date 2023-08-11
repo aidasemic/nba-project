@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GamesComponent } from './games/games.component';
 import { TeamsComponent } from './teams/teams.component';
+import { MatchDetailsComponent } from './match-details/match-details.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'teams',
     component: TeamsComponent,
+  },
+  {
+    path: 'games/:id',
+    component: MatchDetailsComponent,
   },
   {
     path: '',

@@ -7,7 +7,7 @@ import { Match } from 'src/services/models/gamesModels';
   templateUrl: './games.component.html',
   styleUrls: ['./games.component.css'],
 })
-export class GamesComponent implements OnInit  {
+export class GamesComponent implements OnInit {
   matches: Match[] = [];
 
   constructor(private gamesService: GameService) {}
