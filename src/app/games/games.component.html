@@ -1,15 +1,15 @@
 <div class="container">
     <div class="row">
         <h5 style="text-align: center;">Games</h5>
-        <div id="nbaCard" *ngFor="let match of matches" class="card col-6"  [routerLink]="['/games', match.id]"
+        <div id="nbaCard" *ngFor="let match of matches" class="card col-6" [routerLink]="['/games', match.id]"
             style="width: 15rem; margin: 20px; padding: 10px;">
             <img src="https://zao.is/wp-content/uploads/NBA-Logo-Vector-PNG1.png" class="card-img-top" alt="NBA">
             <div class="card-body">
                 <h5 class="card-title">Match</h5>
                 <p class="card-text">{{match.home_team.name}} - {{match.visitor_team.name}}</p>
                 <p class="card-text">Score: {{match.home_team_score}} - {{match.visitor_team_score}}</p>
-                <p class="card-text">Season: {{match.season}}</p>
-                <p class="card-text">Status: {{match.status}}</p>
+                <!-- <p class="card-text">Season: {{match.season}}</p>
+                <p class="card-text">Status: {{match.status}}</p> -->
             </div>
         </div>
     </div>

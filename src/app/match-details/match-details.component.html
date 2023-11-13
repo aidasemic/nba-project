@@ -1,1 +1,12 @@
-<p>match-details works!</p>
+<!-- <p>{{match?.visitor_team_score}}</p> -->
+<div class="card text-bg-light mb-3" style="width: 30%; margin:auto; text-align: center;">
+    <div class="card-header">{{match?.home_team?.name}} - {{match?.visitor_team?.name}}</div>
+    <div class="card-body">
+        <p class="card-text">
+            Date: {{match?.date | date:'dd-MM-yyyy'}}</p>
+        <p>Season: {{match?.season}}</p>
+        <p>Status: {{match?.status}}</p>
+        <p>{{detail?.id}}</p>
+    </div>
+
+</div>

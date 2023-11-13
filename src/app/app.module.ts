@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { TeamService } from 'src/services/teams.service';
 import { MatchDetailsComponent } from './match-details/match-details.component';
+import { GameDetailsService } from 'src/services/gamesDetails.service';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,15 @@ import { MatchDetailsComponent } from './match-details/match-details.component';
     GamesComponent,
     TeamsComponent,
     HeaderComponent,
-    MatchDetailsComponent
+    MatchDetailsComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [GameService, TeamService],
+  providers: [GameService, TeamService, GameDetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

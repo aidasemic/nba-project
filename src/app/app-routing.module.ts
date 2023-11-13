@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { GamesComponent } from './games/games.component';
 import { TeamsComponent } from './teams/teams.component';
 import { MatchDetailsComponent } from './match-details/match-details.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'games/:id',
     component: MatchDetailsComponent,
+  },
+  {
+    path: 'stats',
+    component: StatisticsComponent ,
   },
   {
     path: '',

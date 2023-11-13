@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="card col-5" style="width: 15rem; margin: 20px; padding: 10px;" *ngFor="let detail of details">
+            <div class="card-body">
+                <h5 class="card-title">{{detail.player.first_name}} {{detail.player.last_name}}</h5>
+                <p class="card-text"> Ast: {{detail.ast}}</p>
+                <p class="card-text"> Blk: {{detail.blk}}</p>
+                <p class="card-text"> Team: {{detail.team.full_name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
